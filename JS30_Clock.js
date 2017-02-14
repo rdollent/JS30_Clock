@@ -1,6 +1,6 @@
 const t = new Date();
-let sec = ((t.getSeconds()+1) * 6) + 90;
-let min = ((t.getMinutes()) * 6) + 90;
+let sec = (t.getSeconds() * 6) + 90;
+let min = (t.getMinutes() * 6) + 90;
 let hr = t.getHours();
   if (hr > 12) {
     hr = hr - 12;
