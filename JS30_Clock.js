@@ -1,11 +1,13 @@
 const t = new Date();
-let sec = (t.getSeconds() * 6) + 90;
-let min = (t.getMinutes() * 6) + 90;
+let mil = (t.getMilliseconds() * 0.006) + 90;
+let sec = (t.getSeconds() * 6) + mil;
+let min = (t.getMinutes() * 6) + ((sec-90)/60) + 90;
 let hr = t.getHours();
-  if (hr > 12) {
+if (hr > 12) {
     hr = hr - 12;
-  }
-  hr = 90 + (hr * 30);
+}
+
+hr = (hr * 30) + ((min-90)/60) + 90;
 
 window.onload = getBaseTime;
 function getBaseTime() {
