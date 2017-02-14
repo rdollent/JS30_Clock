@@ -73,7 +73,7 @@ table {
   position: absolute;
   top: 50%;
   left: 5%;
-  transform-origin: right;
+  transform-origin: 100%;
   transform: rotate(0deg);
   z-index: -2;
   border-radius: 0px 50px 50px 0px;
@@ -85,7 +85,7 @@ table {
   position: absolute;
   top: 50%;
   left: 20%;
-  transform-origin: right;
+  transform-origin: 100%;
   transform: rotate(0deg);
   z-index: -1;
   border-radius: 0px 50px 50px 0px;
@@ -97,7 +97,7 @@ table {
   position: absolute;
   top: 50%;
   left: 5%;
-  transform-origin: right;
+  transform-origin: 100%;
   transform: rotate(0deg);
   z-index: 0;
   border-radius: 0px 50px 50px 0px;
