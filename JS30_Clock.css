@@ -57,8 +57,9 @@ table {
 }
 
 body {
-  background-image: url("time_bg.jpg");
-}
+  background: url("time_bg.jpg") no-repeat center fixed;
+  background-size: cover;	
+	}
 
 .clockFace {
   border: 10px solid black;
