@@ -15,23 +15,23 @@ function getBaseTime() {
   document.getElementsByClassName("minHand")[0].style.transform = "rotate(" + min + "deg)";
   document.getElementsByClassName("secHand")[0].style.transform = "rotate(" + sec + "deg)";
   //note: getElementsByClassName returns Nodelist (like an array).
-  setInterval(moveHands,50);  //50 milliseconds
+  setInterval(moveHands,1000);  //1 second
 }
 
 function moveHands() {
-  sec += (360/60/20);  // 360/60/20 degrees every 50 milliseconds
+  sec += (360/60);  // 360/60 degrees every second
   if (sec > 360) {
     sec = sec - 360;
   }
   document.getElementsByClassName("secHand")[0].style.transform = "rotate(" + sec + "deg)";
   
-  min += (360/60/60/20);  // 360/60/60/20 degrees every 50 milliseconds
+  min += (360/60/60);  // 360/60/60 degrees every second
   if (min > 360) {
     min = min - 360;
   }
   document.getElementsByClassName("minHand")[0].style.transform = "rotate(" + min + "deg)";
   
-  hr += (360/60/60/12/20);  // 360/60/60/12/20 degrees every 50 milliseconds
+  hr += (360/12/60/60);  // 360/12/60/60 degrees ever second
   if (hr > 360) {
     hr = hr - 360;
   }
