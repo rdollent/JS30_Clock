@@ -1,7 +1,7 @@
 const t = new Date();
-let mil = (t.getMilliseconds() * 0.006) + 90;
-let sec = (t.getSeconds() * 6) + mil;
-let min = (t.getMinutes() * 6) + ((sec-90)/60) + 90;
+let mil = (t.getMilliseconds() * 0.006) + 90; //how many degrees in 1 mil
+let sec = (t.getSeconds() * 6) + mil;         //how many degrees in 1 sec
+let min = (t.getMinutes() * 6) + ((sec-90)/3600) + 90;  //how many degrees in 1 min
 let hr = t.getHours();
 if (hr > 12) {
     hr = hr - 12;
